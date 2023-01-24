@@ -43,3 +43,5 @@ console.log('Proje açıldı!')
 
 
 /* Kodlar Buradan aşağıya */
+
+document.querySelectorAll('nav a').forEach((e,i) => e.textContent = siteContent.nav[`nav-item-${i+1}`])
