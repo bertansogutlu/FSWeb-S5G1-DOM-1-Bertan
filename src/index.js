@@ -44,5 +44,10 @@ console.log('Proje açıldı!')
 
 /* Kodlar Buradan aşağıya */
 
-document.querySelectorAll('nav a').forEach((e,i) => {e.textContent = siteContent.nav[`nav-item-${i+1}`]; e.className = "italic"});
-document.querySelector("#cta-img").src = siteContent.images["logo-img"];
+document.querySelectorAll("nav a").forEach((e,i) => {e.textContent = siteContent.nav[`nav-item-${i+1}`]; e.className = "italic"});
+document.querySelector("#logo-img").src = siteContent.images["logo-img"];
+document.querySelector("#cta-img").src = siteContent.images["cta-img"];
+document.querySelector("#middle-img").src = siteContent.images["accent-img"];
+
+
+document.querySelector("h1").textContent = siteContent.cta.h1;
