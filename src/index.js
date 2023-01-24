@@ -51,3 +51,6 @@ document.querySelector("#middle-img").src = siteContent.images["accent-img"];
 
 
 document.querySelector("h1").textContent = siteContent.cta.h1;
+document.querySelector(".cta button").textContent = siteContent.cta.button;
+
+document.querySelectorAll(".main-content h4,.main-content p").forEach( (e,i) => e.textContent = Object.values(siteContent["ana-içerik"])[i] );
